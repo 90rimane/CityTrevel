@@ -1,0 +1,228 @@
+    body{
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    header{
+        margin: 1%;
+    }
+    article{
+        margin: 0;
+        padding: 2px;
+    }
+
+    .title{
+        display: grid;
+        padding-top:20px auto 20px 20px;
+        grid-template-columns: auto auto;
+        border-width: 10px;
+        font-size: small;   
+          
+    }
+
+    .title > .title-name{
+        text-align: left;
+        font-size: 45px;
+        min-height: 25px;
+        max-height: 50px;
+    }
+    
+    .title-image{
+      margin-top: 17%;
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    .title > a{
+        text-align: center;
+    }
+
+    .search{
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 5px;
+        height: 80px;
+        text-align: left;
+        margin: 10px 20px 20px 20px;
+        padding: 5px;
+    }
+
+    .search > .searchbar{
+        font-size: 18px;
+        position: inherit;
+        padding-left: 5px;
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        text-align: left;
+
+      }
+      .search > .go{
+        font-size: 18px;
+        margin: 0px;
+        position: inherit;
+        max-width: 50px;
+        padding-left: 5px;
+        grid-column: 4;
+        grid-row: 2;
+        text-align: center;
+      }
+      .search > article{
+        display: grid;
+        margin: 0px;
+        margin-top: 5px;
+        padding-left: 0px;
+        padding-right: 5px;
+        grid-column: 5;
+        grid-row: 1 / span 3;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .weather{
+        display: none;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 5px;
+        background-color: rgb(220, 217, 252);
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 5px;
+    }
+
+      .weather > .Location{
+        padding-top: 0px;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-left: 10px;
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: left;
+      }
+      .weather > .weekday{
+        padding-top: 0px;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-left: 10px;
+        grid-column: 2 / span 3;
+        grid-row: 1;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: left;
+      }
+
+    .weather > .temp {
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-left: 10px;
+        grid-column: 2 / span 3;
+        grid-row: 2;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: left;
+      }
+      .weather > .condition {
+        padding-top: 0px;
+        padding-left: 5px;
+        margin-top: 2px;
+        margin-left: 10px;
+        grid-column: 2 / span 3;
+        grid-row: 3;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: left;
+      }
+
+      .weather > .entry-image{
+        padding-top: 0px;
+        margin-top: 2px;
+        max-height: 80px;
+        max-width: 80px;
+        padding-left: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        grid-column: 1;
+        grid-row: 1 / span 3;
+      }
+
+    .results{
+        display: none;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-gap: 5px;
+        text-align: left;
+        margin: 20px 20px auto 20px;
+        padding: 5px;
+    }
+    .attraction{
+        display: grid;
+        grid-template-columns: 88 auto;
+        grid-template-rows: auto auto;
+        grid-gap: 5px;
+        background-color: rgba(167, 219, 253, 0.5);
+        margin: auto;
+        text-align: left;
+        max-height: 145px;
+        margin: 5px;
+        padding: 5px;
+        height: auto;
+    }
+    .attraction > .name{
+        text-align: right;
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+    .attraction > .address {
+        text-align: right;
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .attraction > .city {
+        text-align: right;
+        grid-column: 2;
+        grid-row: 3;
+      }
+
+      .attraction > img{
+        padding-top: 0px;
+        margin-top: 2px;
+        padding-left: 5px;
+        margin-right: 10px;
+        width: auto;
+        grid-column: 1  span 2 ;
+        grid-row: 1 / span 2;
+      }
+
+    h1{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h2{
+        font-weight: bold;
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+    
+    .Location{
+        font-weight: bold;
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+    footer{
+        padding: 5px;
+        margin: 50px 20px auto 20px;
+        text-align: center;
+        font-size: 12px;
+    }
