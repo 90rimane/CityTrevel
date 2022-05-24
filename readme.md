@@ -1,4 +1,4 @@
-# CityTravel
+# CityTravel-Weather / html-css- javascript
 
 ##Open index.html
 ##Enter City name
